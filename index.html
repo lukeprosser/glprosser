@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="Professional Construction Services">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Construction Services">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <title>G L Prosser</title>
   </head>
@@ -13,25 +15,41 @@
       <div id="content">
         <header>
           <div class="wrapper">
-            <h1>G L Prosser</h1>
-            <nav>
-              <ul>
-                <li>About</li>
-                <li>Services</li>
-                <li>Testimonials</li>
-                <li>Contact</li>
-              </ul>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <h1><a class="navbar-brand" href="#">G L Prosser</a></h1>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+              </div><!-- /container -->
             </nav>
-          </div>
+          </div><!-- /wrapper -->
         </header>
         <section id="about">
           <div class="wrapper">
             <div class="container">
-              <img src="img/gareth.jpg" alt="Gareth Prosser">
-            </div>
-            <div class="container">
-              <h2>About</h2>
-              <p>Based in Cwmbran, South Wales, Gareth Prosser is an experienced construction specialist, with over 20 years in the building industry. Specialising in brickwork, driveways and extensions, Gareth provides a professional, reliable service from consultation to completion.</p>
+              <div class="row">
+                <div class="col-xs-6 col-md-4">
+                <img class="img-responsive" src="img/gareth.png" alt="Gareth Prosser">
+                </div>
+                <div class="col-xs-6 col-md-8">
+                  <h2>About</h2>
+                  <p>Based in Cwmbran, South Wales, Gareth Prosser is an experienced construction specialist, with over 20 years in the building industry.</p> <p>Specialising in brickwork, driveways and extensions, Gareth provides a professional, reliable service from consultation to completion.</p>
+                </div>
+              </div>
             </div>
             <div class="container">
               <p>Through word of mouth and recommendation, Gareth has gained a strong reputation for quality craftsmanship, expertise and reliability.</p>
@@ -132,5 +150,7 @@
         </footer><!-- footer end -->
       </div><!-- content end -->
     </div><!-- page end -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
