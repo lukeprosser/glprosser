@@ -1,38 +1,198 @@
+/*
+========================================
+CUSTOM CSS
+========================================
+
+----------------------------------------
+Color Scheme
+----------------------------------------
+Red: #e24439
+Blue: #caebf2
+Carbon: #a9a9a9
+Neutral: #efefef
+Off White: #fdfdfd
+*/
+
+/*--------------------------------------
+Global Styles
+--------------------------------------*/
+
+
+
+/*--------------------------------------
+Layout
+--------------------------------------*/
+
 body {
   padding-top: 50px;
-  font-size: 1.7em;
 }
 
-section {
+/* section {
   padding-bottom: 1em;
   margin-top: 2em;
   margin-bottom: 2em;
+} */
+
+/*--------------------------------------
+Typography
+--------------------------------------*/
+
+body {
+  font-size: 1.7em;
+}
+
+h2, h3, h4 {
+  text-align: center;
 }
 
 .btn {
   text-transform: uppercase;
 }
 
+footer {
+  text-align: center;
+}
+
+/*--------------------------------------
+Navbar
+--------------------------------------*/
+
+/* navbar */
+.navbar-default {
+    background-color: #e24439;
+    border-color: #e24439;
+}
+/* Title */
+.navbar-default .navbar-brand {
+    color: #fdfdfd;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #efefef;
+}
+
+/* Dropdown */
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #e24439;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #fdfdfd; 
+}
+
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color: #fdfdfd;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #efefef;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #efefef;
+    background-color: #e24439;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #efefef;
+    background-color: #e24439;
+}
+/* Caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #fdfdfd;
+    border-bottom-color: #fdfdfd;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #efefef;
+    border-bottom-color: #efefef;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #efefef;
+    border-bottom-color: #efefef;
+}
+
+/* Mobile version */
+.navbar-default .navbar-toggle {
+    border: 1px solid transparent;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    border: 1px solid #fdfdfd;
+    background-color: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fdfdfd;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #fdfdfd;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+          color: #efefef;
+    }
+}
+
+/*--------------------------------------
+Jumbotron
+--------------------------------------*/
+
 .jumbotron {
-  background: url(../img/jumbobg.jpg);
+  background: url(../img/jumbobg.jpg) center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   color: #fff;
   text-align: center;
+  margin-bottom: 10px;
 }
 
-.shadow {
-  text-shadow: 0px 2px 10px #000;
+.jumbotron h1 {
+  text-shadow: 2px 2px 25px #000;
+  color: #fdfdfd;
+}
+
+.jumbotron h1 a {
+  color: #fdfdfd;
+  text-decoration: none;
+}
+
+.jumbotron h4 {
+  text-shadow: 2px 2px 10px #000;
+  margin-bottom: 2em;
+  color: #fdfdfd;
 }
 
 .cta {
-  background-color: #EB212E;
+  background-color: #D75452;
   color: white;
-  padding: 1em;
-  margin-top: 1.5em;
+  padding: 1em 0.5em;
+  /* margin-top: 1.5em; */
   text-align: center;
+}
+
+.caption h4 {
+  margin: 0;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.customer {
+  text-align: right;
+}
+
+#about {
+  padding-bottom: 2em;
+  background-color: #fdfdfd;
 }
 
 #services {
@@ -41,8 +201,11 @@ section {
 
 #contact {
   background-color: #f4f4f4;
-}
-
-footer {
   text-align: center;
 }
+
+
+
+/*--------------------------------------
+Media Queries
+--------------------------------------*/
