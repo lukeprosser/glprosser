@@ -55,6 +55,7 @@ footer {
 
 /*--------------------------------------
 Navbar
+https://www.jquery-az.com/how-to-change-bootstrap-navbar-color-and-other-default-properties/
 --------------------------------------*/
 
 /* navbar */
@@ -76,7 +77,7 @@ Navbar
   background-color: #e24439;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
-  color: #fdfdfd; 
+  color: #fdfdfd;
 }
 
 /* Link */
