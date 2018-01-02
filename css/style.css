@@ -1,148 +1,168 @@
-/*
-========================================
-CUSTOM CSS
-========================================
+/********** CUSTOM CSS **********/
 
-----------------------------------------
-Color Scheme
-----------------------------------------
-Red: #e24439
-Blue: #caebf2
-Carbon: #a9a9a9
+/* Color Scheme
+Red: #dc3522
+Tan: #d9cb9e
+Light Grey: #374140
+Dark Grey: #2a2c2b
+Black: #1e1e20
 Neutral: #efefef
 Off White: #fdfdfd
 */
 
-/*--------------------------------------
-Global Styles
---------------------------------------*/
-
-
-
-/*--------------------------------------
-Layout
---------------------------------------*/
+/********** GLOBAL STYLES **********/
 
 body {
   padding-top: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.7em;
 }
 
-/* section {
-  padding-bottom: 1em;
-  margin-top: 2em;
-  margin-bottom: 2em;
-} */
-
-/*--------------------------------------
-Typography
---------------------------------------*/
-
-body {
-  font-size: 1.7em;
+section {
+  padding: 1em 1em 2em 1em;
 }
 
 h2, h3, h4 {
   text-align: center;
 }
 
-.btn {
-  text-transform: uppercase;
+h2 {
+  margin-bottom: 0.8em;
 }
 
-footer {
+h3 {
+
+}
+
+/* p {
+  margin-bottom: 1em;
+} */
+
+.group {
+  margin: 1em 0;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  /* color: #efefef; */
+}
+
+.btn-danger {
+  background-color: #dc3522;
+}
+
+.cta {
+  margin: 1em 0;
+  background-color: #d9cb9e;
+  /* color: white; */
+  padding: 1em;
   text-align: center;
 }
 
-/*--------------------------------------
-Navbar
+.caption h4 {
+  margin: 0;
+}
+
+.red {
+  color: #dc3522;
+  font-weight: 500;
+}
+
+/********** HEADER **********/
+
+/********** Navbar **********/
+/*
 https://www.jquery-az.com/how-to-change-bootstrap-navbar-color-and-other-default-properties/
---------------------------------------*/
+*/
 
-/* navbar */
 .navbar-default {
-    background-color: #e24439;
-    border-color: #e24439;
+  background-color: #2a2c2b;
+  border-color: #2a2c2b;
 }
-/* Title */
-.navbar-default .navbar-brand {
+
+  /* Title */
+  .navbar-default .navbar-brand {
+    color: #efefef;
+    font-weight: 400;
+    letter-spacing: 4px;
+  }
+  .navbar-default .navbar-brand:hover,
+  .navbar-default .navbar-brand:focus {
     color: #fdfdfd;
-}
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    color: #efefef;
-}
+  }
 
-/* Dropdown */
-.navbar-default .navbar-nav > li > .dropdown-menu {
-  background-color: #e24439;
-}
-.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
-  color: #fdfdfd;
-}
-
-/* Link */
-.navbar-default .navbar-nav > li > a {
-    color: #fdfdfd;
-}
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
+  /* Dropdown */
+  .navbar-default .navbar-nav > li > .dropdown-menu {
+    background-color: #374140;
+  }
+  .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
     color: #efefef;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #efefef;
-    background-color: #e24439;
-}
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-    color: #efefef;
-    background-color: #e24439;
-}
-/* Caret */
-.navbar-default .navbar-nav > .dropdown > a .caret {
-    border-top-color: #fdfdfd;
-    border-bottom-color: #fdfdfd;
-}
-.navbar-default .navbar-nav > .dropdown > a:hover .caret,
-.navbar-default .navbar-nav > .dropdown > a:focus .caret {
-    border-top-color: #efefef;
-    border-bottom-color: #efefef;
-}
-.navbar-default .navbar-nav > .open > a .caret,
-.navbar-default .navbar-nav > .open > a:hover .caret,
-.navbar-default .navbar-nav > .open > a:focus .caret {
-    border-top-color: #efefef;
-    border-bottom-color: #efefef;
-}
-
-/* Mobile version */
-.navbar-default .navbar-toggle {
-    border: 1px solid transparent;
-}
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-    border: 1px solid #fdfdfd;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #d9cb9e;
     background-color: transparent;
-}
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fdfdfd;
-}
+  }
 
-@media (max-width: 767px) {
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: #fdfdfd;
-    }
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-          color: #efefef;
-    }
-}
+  /* Link */
+  .navbar-default .navbar-nav > li > a {
+    color: #efefef;
+  }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+    color: #d9cb9e;
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #d9cb9e;
+    background-color: #2a2c2b;
+  }
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus {
+    color: #d9cb9e;
+    background-color: #2a2c2b;
+  }
 
-/*--------------------------------------
-Jumbotron
---------------------------------------*/
+  /* Caret */
+  .navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #efefef;
+    border-bottom-color: #efefef;
+  }
+  .navbar-default .navbar-nav > .dropdown > a:hover .caret,
+  .navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #d9cb9e;
+    border-bottom-color: #d9cb9e;
+  }
+  .navbar-default .navbar-nav > .open > a .caret,
+  .navbar-default .navbar-nav > .open > a:hover .caret,
+  .navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #d9cb9e;
+    border-bottom-color: #d9cb9e;
+  }
+
+  /* Mobile version */
+  .navbar-default .navbar-toggle {
+    border: 1px solid transparent;
+  }
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+    border: 1px solid #efefef;
+    background-color: transparent;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #efefef;
+  }
+
+/********** MAIN CONTENT **********/
+
+/********** Jumbotron **********/
 
 .jumbotron {
   background: url(../img/jumbobg.jpg) center center;
@@ -152,35 +172,43 @@ Jumbotron
   background-size: cover;
   color: #fff;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
-.jumbotron h1 {
-  text-shadow: 2px 2px 25px #000;
-  color: #fdfdfd;
+  .jumbotron h1 {
+    text-shadow: 2px 2px 25px #000;
+    color: #fdfdfd;
+    letter-spacing: 4px;
+  }
+
+  .jumbotron h1 a {
+    color: #fdfdfd;
+    text-decoration: none;
+  }
+
+  .jumbotron h4 {
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px #000;
+    margin-bottom: 2em;
+    color: #fdfdfd;
+  }
+
+/********** About **********/
+
+#about {
+  background-color: #efefef;
 }
 
-.jumbotron h1 a {
-  color: #fdfdfd;
-  text-decoration: none;
+/********** Services **********/
+
+#services {
+  background-color: #e3e3e3;
 }
 
-.jumbotron h4 {
-  text-shadow: 2px 2px 10px #000;
-  margin-bottom: 2em;
-  color: #fdfdfd;
-}
+/********** Testimonials **********/
 
-.cta {
-  background-color: #D75452;
-  color: white;
-  padding: 1em 0.5em;
-  /* margin-top: 1.5em; */
-  text-align: center;
-}
-
-.caption h4 {
-  margin: 0;
+#testimonials {
+  background-color: #efefef;
 }
 
 .quote {
@@ -191,22 +219,21 @@ Jumbotron
   text-align: right;
 }
 
-#about {
-  padding-bottom: 2em;
-  background-color: #fdfdfd;
-}
-
-#services {
-  background-color: #f4f4f4;
-}
+/********** Contact **********/
 
 #contact {
-  background-color: #f4f4f4;
+  background-color: #d9cb9e;
+  text-align: center;
+}
+
+/********** FOOTER **********/
+
+footer {
+  padding: 1em;
+  background-color: #2A2C2B;
+  color: #efefef;
   text-align: center;
 }
 
 
-
-/*--------------------------------------
-Media Queries
---------------------------------------*/
+/********** Media Queries **********/
