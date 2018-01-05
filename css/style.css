@@ -2,12 +2,14 @@
 
 /* Color Scheme
 Red: #dc3522
-Tan: #d9cb9e
-Light Grey: #374140
-Dark Grey: #2a2c2b
-Black: #1e1e20
-Neutral: #efefef
-Off White: #fdfdfd
+Navy: #333d51
+Gold: #d3ac2b
+Grey: #cbd0d8
+Off White: #f4f3ea
+
+Off White 1: #fdfdfd
+Off White 2: #efefef
+Off White 3: #e3e3e3
 */
 
 /********** GLOBAL STYLES **********/
@@ -31,15 +33,21 @@ h2 {
 }
 
 h3 {
-
+  margin-bottom: 0.8em;
 }
 
-/* p {
-  margin-bottom: 1em;
-} */
+a {
+  color: #333333;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #dc3522;
+  text-decoration: none;
+}
 
 .group {
-  margin: 1em 0;
+  margin: 1em 0 0 0;
 }
 
 .btn {
@@ -55,10 +63,14 @@ h3 {
 
 .cta {
   margin: 1em 0;
-  background-color: #d9cb9e;
-  /* color: white; */
-  padding: 1em;
+  border: 2px solid #d3ac2b;
+  padding: 1.5em;
   text-align: center;
+}
+
+a.thumbnail:hover {
+  border-color: #d3ac2b;
+  text-decoration: none;
 }
 
 .caption h4 {
@@ -78,57 +90,68 @@ https://www.jquery-az.com/how-to-change-bootstrap-navbar-color-and-other-default
 */
 
 .navbar-default {
-  background-color: #2a2c2b;
-  border-color: #2a2c2b;
+  background-color: #333d51;
+  border-color: #333d51;
 }
 
   /* Title */
   .navbar-default .navbar-brand {
     color: #efefef;
-    font-weight: 400;
+    font-weight: bold;
     letter-spacing: 4px;
   }
   .navbar-default .navbar-brand:hover,
   .navbar-default .navbar-brand:focus {
-    color: #fdfdfd;
+    color: #d3ac2b;
   }
 
   /* Dropdown */
   .navbar-default .navbar-nav > li > .dropdown-menu {
-    background-color: #374140;
+    background-color: #cbd0d8;
+    padding: 0;
   }
   .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
-    color: #efefef;
+    color: #cbd0d8;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #efefef;
+    color: #333333;
+    font-size: 1.1em;
+    letter-spacing: 1px;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #d9cb9e;
+    color: #efefef;
     background-color: transparent;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li:focus {
+    background-color: #d3ac2b;
   }
 
   /* Link */
   .navbar-default .navbar-nav > li > a {
     color: #efefef;
     letter-spacing: 1px;
+    font-size: 0.9em;
+    font-weight: 400;
   }
   .navbar-default .navbar-nav > li > a:hover,
   .navbar-default .navbar-nav > li > a:focus {
-    color: #d9cb9e;
+    color: #d3ac2b;
   }
   .navbar-default .navbar-nav > .active > a,
   .navbar-default .navbar-nav > .active > a:hover,
   .navbar-default .navbar-nav > .active > a:focus {
-    color: #d9cb9e;
-    background-color: #2a2c2b;
+    color: #d3ac2b;
+    background-color: #333d51;
   }
   .navbar-default .navbar-nav > .open > a,
   .navbar-default .navbar-nav > .open > a:hover,
   .navbar-default .navbar-nav > .open > a:focus {
-    color: #d9cb9e;
-    background-color: #2a2c2b;
+    color: #d3ac2b;
+    background-color: #333d51;
   }
 
   /* Caret */
@@ -204,33 +227,44 @@ https://www.jquery-az.com/how-to-change-bootstrap-navbar-color-and-other-default
 /********** About **********/
 
 #about {
-  background-color: #efefef;
+  background-color: #fdfdfd;
 }
 
 /********** Services **********/
 
 #services {
-  background-color: #e3e3e3;
+  background-color: #f4f3ea;
 }
 
 /********** Testimonials **********/
 
 #testimonials {
-  background-color: #efefef;
+  background-color: #fdfdfd;
 }
+
 
 .quote {
-  font-style: italic;
+  margin: 0.5em 0;
+  padding: 1.5em;
+  height: 100%;
+  background-color: #e3e3e3;
 }
 
-.customer {
-  text-align: right;
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
 }
+.row.display-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 /********** Contact **********/
 
 #contact {
-  background-color: #d9cb9e;
+  background-color: #f4f3ea;
   text-align: center;
 }
 
@@ -238,9 +272,17 @@ https://www.jquery-az.com/how-to-change-bootstrap-navbar-color-and-other-default
 
 footer {
   padding: 1em;
-  background-color: #2A2C2B;
+  background-color: #333d51;
   color: #efefef;
   text-align: center;
+}
+footer a {
+  color: #efefef;
+  font-weight: bold;
+}
+footer a:hover {
+  color: #d3ac2b;
+  text-decoration: none;
 }
 
 
