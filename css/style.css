@@ -112,6 +112,7 @@ https://www.jquery-az.com/how-to-change-bootstrap-navbar-color-and-other-default
   /* Link */
   .navbar-default .navbar-nav > li > a {
     color: #efefef;
+    letter-spacing: 1px;
   }
   .navbar-default .navbar-nav > li > a:hover,
   .navbar-default .navbar-nav > li > a:focus {
@@ -151,14 +152,21 @@ https://www.jquery-az.com/how-to-change-bootstrap-navbar-color-and-other-default
   .navbar-default .navbar-toggle {
     border: 1px solid transparent;
   }
-  .navbar-default .navbar-toggle:hover,
-  .navbar-default .navbar-toggle:focus {
-    border: 1px solid #efefef;
-    background-color: transparent;
-  }
-  .navbar-default .navbar-toggle .icon-bar {
-    background-color: #efefef;
-  }
+    /* Remove border when clicked */
+    .navbar-default .navbar-toggle:focus {
+      border: 1px solid transparent;
+      background-color: transparent;
+    }
+    /* Show border on hover */
+    .navbar-default .navbar-toggle:hover {
+      border: 1px solid #efefef;
+      background-color: transparent;
+    }
+    /* Hamburger bar colour */
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: #efefef;
+    }
+
 
 /********** MAIN CONTENT **********/
 
