@@ -5,7 +5,7 @@ Red: #dc3522
 Navy: #333d51
 Gold: #d3ac2b
 Grey: #cbd0d8
-Off White: #f4f3ea
+Off Tan: #f4f3ea
 
 Off White 1: #fdfdfd
 Off White 2: #efefef
@@ -13,6 +13,8 @@ Off White 3: #e3e3e3
 */
 
 /********** GLOBAL STYLES **********/
+
+/********** Main Elements **********/
 
 body {
   padding-top: 50px;
@@ -24,30 +26,49 @@ section {
   padding: 1em 1em 2em 1em;
 }
 
+  section:nth-child(even) {
+    background: #fdfdfd;
+  }
+
+  section:nth-child(odd) {
+    background: #f4f3ea;
+  }
+
 h2, h3, h4 {
   text-align: center;
 }
 
-h2 {
-  margin-bottom: 0.8em;
-}
+  h2 {
+    margin-bottom: 0.8em;
+  }
 
-h3 {
-  margin-bottom: 0.8em;
-}
+  h3 {
+    margin-bottom: 0.8em;
+  }
 
 a {
   color: #333333;
   font-weight: bold;
 }
 
-a:hover {
-  color: #dc3522;
-  text-decoration: none;
-}
+  a:hover {
+    color: #dc3522;
+    text-decoration: none;
+  }
 
-.group {
-  margin: 1em 0 0 0;
+  a.thumbnail:hover {
+    border-color: #d3ac2b;
+    text-decoration: none;
+  }
+
+  a.thumbnail:focus {
+    outline: none;
+    border: 1px solid #d3ac2b;
+    box-shadow: none;
+  }
+
+.caption h4 {
+  margin: 0;
 }
 
 .btn {
@@ -57,29 +78,46 @@ a:hover {
   /* color: #efefef; */
 }
 
-.btn-danger {
-  background-color: #dc3522;
-}
-
-.cta {
-  margin: 1em 0;
-  border: 2px solid #d3ac2b;
-  padding: 1.5em;
-  text-align: center;
-}
-
-a.thumbnail:hover {
-  border-color: #d3ac2b;
-  text-decoration: none;
-}
-
-.caption h4 {
-  margin: 0;
-}
+  .btn-danger {
+    background-color: #dc3522;
+  }
 
 .red {
   color: #dc3522;
   font-weight: 500;
+}
+
+/********** Layout **********/
+
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.group {
+  margin: 1em 0 0 0;
+}
+
+.box {
+  height: 100%;
+  margin: 0 0 0.5em 0;
+}
+
+.cta {
+  margin: 1em 0;
+  padding: 1.5em;
+  border: 2px solid #d3ac2b;
+  text-align: center;
+}
+
+.quote {
+  margin: 0.5em 0;
+  padding: 1.5em 1.5em 1em 1.5em;
+  background-color: #e3e3e3;
 }
 
 /********** HEADER **********/
@@ -227,44 +265,24 @@ https://www.jquery-az.com/how-to-change-bootstrap-navbar-color-and-other-default
 /********** About **********/
 
 #about {
-  background-color: #fdfdfd;
+
 }
 
 /********** Services **********/
 
 #services {
-  background-color: #f4f3ea;
+
 }
 
 /********** Testimonials **********/
 
 #testimonials {
-  background-color: #fdfdfd;
+
 }
-
-
-.quote {
-  margin: 0.5em 0;
-  padding: 1.5em;
-  height: 100%;
-  background-color: #e3e3e3;
-}
-
-.row.display-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-.row.display-flex > [class*='col-'] {
-  display: flex;
-  flex-direction: column;
-}
-
-
 
 /********** Contact **********/
 
 #contact {
-  background-color: #f4f3ea;
   text-align: center;
 }
 
