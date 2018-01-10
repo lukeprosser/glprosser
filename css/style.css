@@ -82,10 +82,10 @@ a {
     background-color: #dc3522;
   }
 
-.red {
+/* .red {
   color: #dc3522;
   font-weight: 500;
-}
+} */
 
 /********** Layout **********/
 
@@ -191,6 +191,11 @@ https://www.jquery-az.com/how-to-change-bootstrap-navbar-color-and-other-default
     color: #d3ac2b;
     background-color: #333d51;
   }
+  /* Active link */
+  .navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {
+    color: #333;
+    background-color: #d3ac2b;
+  }
 
   /* Caret */
   .navbar-default .navbar-nav > .dropdown > a .caret {
@@ -227,7 +232,6 @@ https://www.jquery-az.com/how-to-change-bootstrap-navbar-color-and-other-default
     .navbar-default .navbar-toggle .icon-bar {
       background-color: #efefef;
     }
-
 
 /********** MAIN CONTENT **********/
 
@@ -283,6 +287,11 @@ https://www.jquery-az.com/how-to-change-bootstrap-navbar-color-and-other-default
 /********** Contact **********/
 
 #contact {
+  text-align: center;
+}
+
+#contact-link {
+  padding-top: 2em;
   text-align: center;
 }
 
