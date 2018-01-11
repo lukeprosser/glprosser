@@ -21,11 +21,11 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><span class="red">GL</span>Prosser</a>
+            <a class="navbar-brand" href="index.php"><span class="red">GL</span>Prosser</a>
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.php#about">About</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -37,15 +37,12 @@
                   <li><a href="driveways.html">Driveways</a></li>
                 </ul>
               </li>
-              <li><a href="index.html#testimonials">Testimonials</a></li>
-              <li><a href="index.html#contact">Contact</a></li>
+              <li><a href="index.php#testimonials">Testimonials</a></li>
+              <li><a href="index.php#contact">Contact</a></li>
             </ul>
           </div><!-- end navbar collapse -->
         </div><!-- end navbar container -->
       </nav><!-- end nav -->
-    </header><!-- end header -->
-
-    <main>
       <div class="jumbotron">
         <div class="container">
           <h1 class="shadow"><a href="index.html"><span class="red">GL</span>Prosser</a></h1>
@@ -53,7 +50,9 @@
           <p><a class="btn btn-danger btn-lg" href="index.html#contact" role="button">Arrange a Quote</a></p>
         </div>
       </div><!-- end jumbotron -->
+    </header><!-- end header -->
 
+    <main>
       <section id="about">
         <div class="container">
           <h2>About</h2>
@@ -206,19 +205,25 @@
           <h2>Contact</h2>
         </div>
         <div class="container">
-          <div class="row display-flex">
-            <div class="col-xs-12 col-sm-6">
-              <div class="box">
-                <div class="cta">
-                  <p>Get in touch today!</p>
+          <div class="row">
+            <div class="col-xs-12">
+              <p>Get in touch today to arrange a free consultation:</p>
+              <form action="contactform.php" method="post">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" placeholder="Full Name">
                 </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <div class="box">
-                <p>gareth@glprosser.com</p>
-                <p>07974 795420</p>
-              </div>
+                <div class="form-group">
+                  <input type="email" name="email" class="form-control" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                  <input type="text" name="subject" class="form-control" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                  <textarea name="message" class="form-control" rows="3" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-danger">Submit</button>
+              </form>
+
             </div>
           </div>
         </div>
