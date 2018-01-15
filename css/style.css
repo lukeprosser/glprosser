@@ -93,6 +93,12 @@ a {
     background-color: #dc3522;
   }
 
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+
 
 /* .red {
   color: #dc3522;
