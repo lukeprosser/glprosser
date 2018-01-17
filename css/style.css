@@ -46,7 +46,7 @@ h2, h3, h4 {
 
 a {
   color: #333333;
-  font-weight: bold;
+  font-weight: 500;
   }
   a:hover {
     color: #dc3522;
@@ -98,13 +98,6 @@ a {
   height: auto;
 }
 
-
-
-/* .red {
-  color: #dc3522;
-  font-weight: 500;
-} */
-
 /********** Layout **********/
 
 .row.display-flex {
@@ -153,7 +146,7 @@ https://www.jquery-az.com/how-to-change-bootstrap-navbar-color-and-other-default
   /* Title */
   .navbar-default .navbar-brand {
     color: #efefef;
-    font-weight: bold;
+    font-weight: 400;
     letter-spacing: 4px;
   }
   .navbar-default .navbar-brand:hover,
@@ -329,6 +322,66 @@ footer a:hover {
   color: #d3ac2b;
   text-decoration: none;
 }
-
+.back-to-top {
+  display: none;
+  background: none;
+  margin: 0;
+  /* padding: 4vw; */
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 4px;
+  z-index: 100;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.25);
+  font-size: 5vw;
+  }
+  .glyphicon-menu-up {
+    
+  }
 
 /********** Media Queries **********/
+
+/*
+@media (min-width: 800px) {
+  .back-to-top {
+    padding-top: .5vw;
+    bottom: 1em;
+    right: 1em;
+    width: 7vw;
+    height: 7vw;
+    }
+    .back-to-top i {
+      font-size: 6vw;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .back-to-top {
+    padding-top: .5vw;
+    bottom: 1em;
+    right: 1em;
+    width: 6vw;
+    height: 6vw;
+    }
+    .back-to-top i {
+      font-size: 5vw;
+    }
+  }
+  
+  @media (min-width: 1500px) {
+    .back-to-top {
+    padding-top: .5vw;
+    bottom: 1em;
+    right: 1em;
+    width: 4vw;
+    height: 4vw;
+    }
+    .back-to-top i {
+      font-size: 3vw;
+    }
+  }
+  */

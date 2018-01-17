@@ -7,24 +7,48 @@ var shiftWindow = function() { scrollBy(0, -50) };
 if (location.hash) shiftWindow();
 window.addEventListener("hashchange", shiftWindow);
 
-$(document).ready(function(){
+// Back-to-top button
+jQuery(document).ready(function() {
 
-  // Set trigger and container variables
-  var trigger = $('#services-menu li a'),
-      container = $('#content');
+  var offset = 300;
+  var duration = 300;
 
-  // Fire on click
-  trigger.on('click', function(){
-    // Set $this for re-use. Set target from data attribute
-    var $this = $(this),
-    target = $this.data('target');
+  jQuery(window).scroll(function() {
+    if (jQuery(this).scrollTop() > offset) {
+      jQuery(".back-to-top").fadeIn(duration);
+    } else {
+      jQuery(".back-to-top").fadeOut(duration);
+    }
 
-    // Load target page into container
-    container.load(target + '.html');
+  });
 
-    // Stop normal link behaviour
+  jQuery(".back-to-top").click(function(event) {
+    event.preventDefault();
+    jQuery("html, body").animate({scrollTop: 0}, duration);
     return false;
   });
 
-  $("#form").validate();
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        // window.location.hash = hash;
+      });
+    } // End if
+  });
+
 });
