@@ -208,20 +208,18 @@
             <div class="row">
               <div class="col-xs-12">
                 <p>Get in touch today to arrange a free consultation:</p>
-                <form name="contact" action="send.php" method="POST" id="form">
+                <div id="form-messages"></div>
+                <form id="ajax-contact" name="contact" action="mailer.php" method="POST" id="form">
                   <div class="form-group">
-                    <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Full Name" required>
                   </div>
                   <div class="form-group">
-                    <input type="email" name="email" class="email form-control" placeholder="Email Address" required>
+                    <input type="email" id="email" name="email" class="email form-control" placeholder="Email Address" required>
                   </div>
                   <div class="form-group">
-                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                    <textarea id="message" name="message" class="form-control" rows="3" placeholder="Message" required></textarea>
                   </div>
-                  <div class="form-group">
-                    <textarea name="message" class="form-control" rows="3" placeholder="Message" required></textarea>
-                  </div>
-                  <button type="submit" value="Send message" class="btn btn-danger">Submit</button>
+                  <button type="submit" class="btn btn-danger">Submit</button>
                 </form><!-- end contact form -->
               </div>
             </div>
@@ -241,5 +239,6 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
