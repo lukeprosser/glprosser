@@ -1,0 +1,14 @@
+GLPROSSER.com Design
+==============================
+
+Colour Scheme:
+
+Red: #dc3522
+Navy: #333d51
+Gold: #d3ac2b
+Grey: #cbd0d8
+Off Tan: #f4f3ea
+
+Off White 1: #fdfdfd
+Off White 2: #efefef
+Off White 3: #e3e3e3

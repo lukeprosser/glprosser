@@ -2,20 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional Construction Services">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    
+    <title>G L Prosser</title>
+
+    <meta name="description" content="Gareth Prosser is a building contractor based in Cwmbran, South Wales.">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
-    <title>G L Prosser</title>
   </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header">
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <header><!-- Header start -->
+      <nav class="navbar navbar-default navbar-fixed-top"><!-- Navbar start -->
+        <div class="container"><!-- Navbar Container start -->
+          <div class="navbar-header"><!-- Navbar Header start -->
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
@@ -23,8 +27,8 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.html">GLPROSSER</a>
-          </div>
-          <div id="navbar" class="collapse navbar-collapse">
+          </div><!-- Navbar Header end -->
+          <div id="navbar" class="collapse navbar-collapse"><!-- Navbar Collapse start -->
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#about">About</a></li>
               <li class="dropdown">
@@ -41,20 +45,21 @@
               <li><a href="#testimonials">Testimonials</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
-          </div><!-- end navbar collapse -->
-        </div><!-- end navbar container -->
-      </nav><!-- end nav -->
-      <div class="jumbotron">
+          </div><!-- Navbar Collapse end -->
+        </div><!-- Navbar Container end -->
+      </nav><!-- Navbar end -->
+      <div class="jumbotron"><!-- Jumbotron start -->
         <div class="container">
           <h1 class="shadow"><a href="index.html"><img class="logo" src="img/glprosser-logo.png" alt="G L Prosser"></a></h1>
           <p><a class="btn btn-danger btn-lg" href="index.html#contact" role="button">Arrange a Quote</a></p>
         </div>
-      </div><!-- end jumbotron -->
-    </header><!-- end header -->
+      </div><!-- Jumbotron end -->
+    </header><!-- Header end -->
 
-    <div id="content">
-      <main>
-        <section id="about">
+    <div id="content"><!-- Content start -->
+      <main><!-- Main start -->
+
+        <section id="about"><!-- About start -->
           <div class="container">
             <h2>About</h2>
           </div>
@@ -70,9 +75,9 @@
               </div>
             </div>
           </div>
-        </section><!-- end about -->
+        </section><!-- About end -->
 
-        <section id="services">
+        <section id="services"><!-- Services start -->
           <div class="container">
             <h2>Services</h2>
           </div>
@@ -86,8 +91,9 @@
               </div>
             </div>
           </div>
-          <div class="group">
-            <div class="container">
+
+          <div class="group"><!-- Group start -->
+            <div class="container"><!-- Services Thumbnail start -->
               <div class="row">
                 <div class="col-xs-12 col-sm-6">
                   <a href="extensions.html" class="thumbnail">
@@ -138,9 +144,9 @@
                   </a>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="container">
+            </div><!-- Services Thumbnail end -->
+          </div><!-- Group end -->
+          <div class="container"><!-- Additional Services start -->
             <h3>Additional Services</h3>
           </div>
           <div class="container">
@@ -154,15 +160,15 @@
               <div class="col-xs-12 col-sm-6">
                 <div class="box">
                   <div class="cta">
-                    <p><a href="mailto:gareth@glprosser.com?Subject=Website%20Enquiry">Email today</a> to arrange a free, bespoke consultation, and to find out how Gareth can improve your home or business.</p>
+                    <p><a href="#contact">Email today</a> to arrange a free, bespoke consultation, and to find out how Gareth can improve your home or business.</p>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section><!-- end services -->
+          </div><!-- Additional Services end -->
+        </section><!-- Services end -->
 
-        <section id="testimonials">
+        <section id="testimonials"><!-- Testimonials start -->
           <div class="container">
             <h2>Testimonials</h2>
           </div>
@@ -198,9 +204,9 @@
               </div>
             </div>
           </div>
-        </section><!-- end testimonials -->
+        </section><!-- Testimonials end -->
 
-        <section id="contact">
+        <section id="contact"><!-- Contact start -->
           <div class="container">
             <h2>Contact</h2>
           </div>
@@ -209,7 +215,10 @@
               <div class="col-xs-12">
                 <p>Get in touch today to arrange a free consultation:</p>
                 <div id="form-messages"></div>
-                <form id="ajax-contact" name="contact" action="mailer.php" method="POST" id="form">
+                <form id="ajax-contact" name="contact" action="mailer.php" method="POST" id="form"><!-- Contact Form start -->
+                  <div class="form-group">
+                    <input type="text" name="title" class="form-control hidden">
+                  </div>
                   <div class="form-group">
                     <input type="text" id="name" name="name" class="form-control" placeholder="Full Name" required>
                   </div>
@@ -220,25 +229,27 @@
                     <textarea id="message" name="message" class="form-control" rows="3" placeholder="Message" required></textarea>
                   </div>
                   <button type="submit" class="btn btn-danger">Submit</button>
-                </form><!-- end contact form -->
+                </form><!-- Contact Form end -->
               </div>
             </div>
           </div>
-        </section><!-- end contact -->
+        </section><!-- Contact end -->
 
-      </main><!-- end main -->
-    </div><!-- end content -->
-    <footer>
+      </main><!-- Main end -->
+    </div><!-- Content end -->
+
+    <footer><!-- Footer start -->
       <div class="container">
         <a href="#" class="back-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
         <p>&copy; G L Prosser <span id="year"></span>. All Rights Reserved.</p>
-        <p>Project by <a href="#" target="_blank">CreateDeluxe</a></p>
+        <p>Project by <a href="http://createdeluxe.com/" target="_blank">CreateDeluxe</a></p>
       </div>
-    </footer><!-- end footer -->
+    </footer><!-- Footer end -->
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/form.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script><!-- jQuery -->
+    <script src="js/bootstrap.min.js"></script><!-- Bootstrap -->
+    <script src="js/script.js"></script><!-- Custom JS -->
+    <script src="js/form.js"></script><!-- Contact Form -->
+
   </body>
 </html>
