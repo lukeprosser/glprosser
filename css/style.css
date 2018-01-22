@@ -99,6 +99,26 @@ a.thumbnail:focus {
     background-color: #dc3522;
   }
 
+/* Load More button */
+#loadMore {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+  #loadMore a {
+    background: #333d51;
+    border-radius: 4px;
+    color: white;
+    display: inline-block;
+    padding: 10px 30px;
+    transition: all 0.25s ease-out;
+    -webkit-font-smoothing: antialiased;
+  }
+  #loadMore a:hover {
+    background-color: #d3ac2b;
+  }
+
 .logo {
   max-width: 100%;
   height: auto;
@@ -112,14 +132,23 @@ a.thumbnail:focus {
 /********** Layout **********/
 
 .row.display-flex {
-  display: flex;
+  display: block; /* Normally 'flex' - Safari bug */
   flex-wrap: wrap;
+  
 }
   .row.display-flex > [class*='col-'] {
     display: flex;
     flex-direction: column;
   }
 
+/* Offset anchor navigation */
+.anchor {
+  display: block;
+  height: 50px;
+  margin-top: -50px;
+  visibility: hidden;
+}
+  
 .group {
   margin: 1em 0 0 0;
 }
@@ -297,11 +326,13 @@ https://www.jquery-az.com/how-to-change-bootstrap-navbar-color-and-other-default
     color: #fdfdfd;
   }
 
-/********** Contact **********/
+/********** Services **********/
 
-#contact {
-  text-align: center;
+#services a:visited {
+  color: #333;
 }
+
+/********** Contact **********/
 
 #contact-link {
   padding-top: 2em;
@@ -316,14 +347,18 @@ footer {
   color: #efefef;
   text-align: center;
 }
-  footer a, a:visited {
+  footer a {
     color: #efefef;
     font-weight: bold;
   }
-  footer a:hover {
+  footer .container p a:hover {
     color: #d3ac2b;
     text-decoration: none;
   }
+  footer a:visited {
+    color: #efefef;
+  }
+
 
 /* Back-to-top navigation */  
 .back-to-top {
