@@ -5,16 +5,22 @@ jQuery(document).ready(function() {
   var duration = 300;
 
   jQuery(window).scroll(function() {
+    // If scroll distance greater than 300px
     if (jQuery(this).scrollTop() > offset) {
+      // Fade in button
       jQuery(".back-to-top").fadeIn(duration);
     } else {
+      // If less than 300px, fade out
       jQuery(".back-to-top").fadeOut(duration);
     }
 
   });
 
+  // Add click event to button
   jQuery(".back-to-top").click(function(event) {
+    // Prevent default behaviour
     event.preventDefault();
+    // Scroll to top at speed of 300ms
     jQuery("html, body").animate({scrollTop: 0}, duration);
     return false;
   });
